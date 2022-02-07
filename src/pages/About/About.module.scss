@@ -1,0 +1,21 @@
+.About {
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px 0 15px;
+
+  div {
+    padding: 50px 0 50px 20px;
+    background: #e3eaed;
+    border-radius: 5px;
+    max-width: 1200px;
+    width: 100%;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
