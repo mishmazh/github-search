@@ -1,0 +1,31 @@
+.Profile {
+  padding: 15px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .ProfileWrapper {
+    display: flex;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    max-width: 1200px;
+    width: 100%;
+
+    .imgBlock {
+      padding: 15px;
+    }
+
+    .descBlock {
+      padding: 15px;
+
+      .Badges {
+        display: flex;
+
+        div {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
