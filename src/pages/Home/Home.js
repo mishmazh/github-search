@@ -13,15 +13,15 @@ const Home = () => {
       <div className={classes.HomeWrapper}>
         <Search />
 
-        {loading ? (
-          <Loader />
-        ) : (
-          <div className={classes.Cards}>
-            {users.map((user) => {
+        <div className={classes.Cards}>
+          {loading ? (
+            <Loader />
+          ) : (
+            users.map((user) => {
               return <Card user={user} key={user.id} />;
-            })}
-          </div>
-        )}
+            })
+          )}
+        </div>
       </div>
     </div>
   );
