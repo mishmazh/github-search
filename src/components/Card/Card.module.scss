@@ -1,11 +1,11 @@
 .Card {
+  display: flex;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-  width: 100%;
-  max-width: 300px;
+  width: 320px;
   height: 300px;
-  margin: 10px auto;
+  margin-top: 15px;
   border: 1px solid #bebebe;
   transition-duration: 0.1s;
 }
