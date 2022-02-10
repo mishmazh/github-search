@@ -1,7 +1,7 @@
 import classes from "./Repos.module.scss";
 
 export const Repos = ({ repos }) => (
-  <>
+  <div className={classes.Repos}>
     {repos.map((repo) => {
       return (
         <div key={repo.id}>
@@ -13,5 +13,5 @@ export const Repos = ({ repos }) => (
         </div>
       );
     })}
-  </>
+  </div>
 );

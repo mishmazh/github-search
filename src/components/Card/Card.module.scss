@@ -4,7 +4,8 @@
   overflow: hidden;
   border: 1px solid #bebebe;
   border-radius: 5px;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   height: 300px;
   margin-top: 15px;
   transition-duration: 0.1s;

@@ -38,7 +38,9 @@ const Profile = () => {
 
   return (
     <div className={classes.Profile}>
-      <Link to="/">На главную</Link>
+      <div className={classes.Link}>
+        <Link to="/">На главную</Link>
+      </div>
 
       <div className={classes.ProfileWrapper}>
         <div className={classes.imgBlock}>
@@ -79,15 +81,23 @@ const Profile = () => {
           </ul>
 
           <div className={classes.Badges}>
-            <div>Followers: {followers}</div>
-            <div>Following: {following}</div>
-            <div>Repos: {public_repos}</div>
-            <div>Gists: {public_gists}</div>
+            <div style={{ background: "#0470ff" }}>
+              Followers: <strong>{followers}</strong>
+            </div>
+            <div style={{ background: "#269d37" }}>
+              Following: <strong>{following}</strong>
+            </div>
+            <div style={{ background: "#1295b2" }}>
+              Repos: <strong>{public_repos}</strong>
+            </div>
+            <div style={{ background: "#303138" }}>
+              Gists: <strong>{public_gists}</strong>
+            </div>
           </div>
         </div>
       </div>
 
-      <Repos repos={repos}/>
+      <Repos repos={repos} />
     </div>
   );
 };

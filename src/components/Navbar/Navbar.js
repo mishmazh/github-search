@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className={classes.Navbar}>
-      <div>Github Поиск</div>
+      <div>Github Search</div>
 
       <ul>
         <li>
-          <NavLink to="/">Главная</NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about">Информация</NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
       </ul>
     </nav>
