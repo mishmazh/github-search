@@ -4,30 +4,36 @@ import {
   GET_USER,
   SEARCH_USERS,
   SET_LOADING,
-} from "../types";
-
-const handlers = {
-  [SEARCH_USERS]: (state, { payload }) => ({
-    ...state,
-    users: payload,
-    loading: false,
-  }),
-  [GET_REPOS]: (state, { payload }) => ({
-    ...state,
-    repos: payload,
-    loading: false,
-  }),
-  [GET_USER]: (state, { payload }) => ({
-    ...state,
-    user: payload,
-    loading: false,
-  }),
-  [CLEAR_USERS]: (state) => ({ ...state, users: [] }),
-  [SET_LOADING]: (state) => ({ ...state, loading: true }),
-  DEFAULT: (state) => state,
-};
+} from "../actionTypes";
 
 export const githubReducer = (state, action) => {
-  const handler = handlers[action.type] || handlers.DEFAULT;
-  return handler(state, action);
+  switch (action.type) {
+    case SEARCH_USERS:
+      return {
+        ...state,
+        users: action.payload,
+        loading: false,
+      };
+    case GET_REPOS:
+      return {
+        ...state,
+        repos: action.payload,
+        loading: false,
+      };
+    case GET_USER:
+      return {
+        ...state,
+        user: action.payload,
+        loading: false,
+      };
+    case CLEAR_USERS:
+      return { ...state, users: [] };
+    case SET_LOADING:
+      return {
+        ...state,
+        loading: true,
+      };
+    default:
+      return state;
+  }
 };

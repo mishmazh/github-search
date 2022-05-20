@@ -1,18 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import "./index.scss";
 import { BrowserRouter } from "react-router-dom";
+import { AlertState } from "./contex/alert/AlertState";
+import { GithubState } from "./contex/github/GithubState";
 
 const app = (
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <GithubState>
+    <AlertState>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </AlertState>
+  </GithubState>
 );
 
-ReactDOM.render(app, document.getElementById("root"));
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = createRoot(document.getElementById("root"));
+root.render(app);

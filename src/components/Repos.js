@@ -1,17 +1,15 @@
-import classes from "./Repos.module.scss";
-
 export const Repos = ({ repos }) => (
-  <div className={classes.Repos}>
-    {repos.map((repo) => {
-      return (
-        <div key={repo.id}>
+  <div className="">
+    {repos.map((repo) => (
+      <div className="card mb-3" key={repo.id}>
+        <div className="card-body">
           <h5>
             <a href={repo.html_url} target="_blank" rel="noreferrer">
               {repo.name}
             </a>
           </h5>
         </div>
-      );
-    })}
+      </div>
+    ))}
   </div>
 );

@@ -7,7 +7,7 @@ import {
   GET_USER,
   SEARCH_USERS,
   SET_LOADING,
-} from "../types";
+} from "../actionTypes";
 import axios from "axios";
 
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
@@ -28,6 +28,7 @@ export const GithubState = ({ children }) => {
 
   const search = async (value) => {
     setLoading();
+
     const response = await axios.get(
       withCreds(`https://api.github.com/search/users?q=${value}&`)
     );
@@ -40,6 +41,7 @@ export const GithubState = ({ children }) => {
 
   const getUser = async (name) => {
     setLoading();
+
     const response = await axios.get(
       withCreds(`https://api.github.com/users/${name}?`)
     );
@@ -52,6 +54,7 @@ export const GithubState = ({ children }) => {
 
   const getRepos = async (name) => {
     setLoading();
+
     const response = await axios.get(
       withCreds(`https://api.github.com/users/${name}/repos?per_page=5&`)
     );
