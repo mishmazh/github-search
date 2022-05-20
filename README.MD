@@ -12,6 +12,8 @@
 
 ## API - Github Api
 ### Documentation:
-https://social-network.samuraijs.com/docs
+OAuth Apps -
+https://github.com/settings/developers
 
 ## Deploy - Firebase
+https://github-search-e51a2.web.app

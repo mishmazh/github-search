@@ -23,7 +23,7 @@ const Search = () => {
   };
 
   return (
-    <div className="form-group mb-3">
+    <div className="form-group mb-4">
       <input
         className="form-control"
         type="text"

@@ -2,7 +2,7 @@ import Search from "../components/Search";
 import { Card } from "../components/Card";
 import { useContext } from "react";
 import { GithubContext } from "../contex/github/githubContext";
-import { Loader } from "../components/Loader/Loader";
+import { Loader } from "../components/Loader";
 
 const Home = () => {
   const { users, loading } = useContext(GithubContext);
@@ -16,7 +16,7 @@ const Home = () => {
           <Loader />
         ) : (
           users.map((user) => (
-            <div className="col-sm-4 mb-4" key={user.id}>
+            <div className="col-sm-3 mb-4" key={user.id}>
               <Card user={user} />
             </div>
           ))

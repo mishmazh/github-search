@@ -6,7 +6,10 @@ export const Card = ({ user }) => (
 
     <div className="card-body">
       <h5 className="card-title">{user.login}</h5>
-      <Link className="btn btn-primary" to={"/profile/" + user.login}>
+      <Link
+        className="btn btn-primary w-100 mt-1"
+        to={"/profile/" + user.login}
+      >
         Open
       </Link>
     </div>

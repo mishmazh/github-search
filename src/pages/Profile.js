@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { GithubContext } from "../contex/github/githubContext";
 import { Link, useParams } from "react-router-dom";
-import { Loader } from "../components/Loader/Loader";
+import { Loader } from "../components/Loader";
 import { Repos } from "../components/Repos";
 
 const Profile = () => {
@@ -34,7 +34,7 @@ const Profile = () => {
 
   return (
     <>
-      <Link className="btn btn-primary mb-3" to="/">
+      <Link className="btn btn-primary mb-2" to="/">
         To main page
       </Link>
 
@@ -43,7 +43,7 @@ const Profile = () => {
           <div className="row">
             <div className="col-sm-3 text-center">
               <img className="w-100" src={avatar_url} alt={name} />
-              <h1>{name}</h1>
+              <h1 className="mt-2">{name}</h1>
               {location && <p>Location: {location}</p>}
             </div>
 
@@ -54,16 +54,8 @@ const Profile = () => {
                   <p>{bio}</p>
                 </>
               )}
-              <a
-                className="btn btn-dark"
-                href={html_url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                View profile
-              </a>
 
-              <ul>
+              <ul className="list-unstyled">
                 {login && (
                   <li>
                     <strong>Username: </strong>
@@ -84,10 +76,25 @@ const Profile = () => {
                 )}
               </ul>
 
-              <div className="badge bg-primary">Followers: {followers}</div>
-              <div className="badge bg-success">Following: {following}</div>
-              <div className="badge bg-info">Repos: {public_repos}</div>
+              <div className="badge bg-primary me-2">
+                Followers: {followers}
+              </div>
+              <div className="badge bg-success me-2">
+                Following: {following}
+              </div>
+              <div className="badge bg-info me-2">Repos: {public_repos}</div>
               <div className="badge bg-dark">Gists: {public_gists}</div>
+
+              <div className="mt-3">
+                <a
+                  className="btn btn-dark"
+                  href={html_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View profile
+                </a>
+              </div>
             </div>
           </div>
         </div>

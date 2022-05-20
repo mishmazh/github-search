@@ -14,6 +14,7 @@ export const Alert = () => {
       role="alert"
     >
       {alert.text}
+
       <button
         type="button"
         className="btn-close"

@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400&display=swap");
 
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
 }
