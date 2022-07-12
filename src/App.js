@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -16,6 +16,7 @@ const App = () => (
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/profile/:urlName" element={<Profile />} />
+        <Route path="/:route" element={<Navigate to="/" />} />
       </Routes>
     </div>
   </>
