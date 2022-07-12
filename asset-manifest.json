@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/github-search/static/css/main.f3f1a25a.css",
+    "main.js": "/github-search/static/js/main.71e92e8e.js",
+    "static/media/Sora-Regular.ttf": "/github-search/static/media/Sora-Regular.9d1a5a24778609b79d75.ttf",
+    "index.html": "/github-search/index.html",
+    "main.f3f1a25a.css.map": "/github-search/static/css/main.f3f1a25a.css.map",
+    "main.71e92e8e.js.map": "/github-search/static/js/main.71e92e8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3f1a25a.css",
+    "static/js/main.71e92e8e.js"
+  ]
+}
