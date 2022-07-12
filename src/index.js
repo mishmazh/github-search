@@ -1,10 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import "./index.scss";
+import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import { AlertState } from "./contex/alert/AlertState";
-import { GithubState } from "./contex/github/GithubState";
+import { AlertState } from "./store/alert/AlertState";
+import { GithubState } from "./store/github/GithubState";
 
 const app = (
   <GithubState>

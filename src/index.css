@@ -1,0 +1,14 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: Sora;
+  src: url("assets/fonts/Sora-Regular.ttf");
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

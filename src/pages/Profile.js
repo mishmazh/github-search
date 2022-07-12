@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { GithubContext } from "../contex/github/githubContext";
+import { GithubContext } from "../store/github/githubContext";
 import { Link, useParams } from "react-router-dom";
 import { Loader } from "../components/Loader";
 import { Repos } from "../components/Repos";

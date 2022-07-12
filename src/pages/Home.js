@@ -1,7 +1,7 @@
 import Search from "../components/Search";
 import { Card } from "../components/Card";
 import { useContext } from "react";
-import { GithubContext } from "../contex/github/githubContext";
+import { GithubContext } from "../store/github/githubContext";
 import { Loader } from "../components/Loader";
 
 const Home = () => {
