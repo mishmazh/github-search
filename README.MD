@@ -16,4 +16,4 @@ OAuth Apps -
 https://github.com/settings/developers
 
 ## Deploy - Firebase
-https://github-search-e51a2.web.app
+https://xofyerg.github.io/github-search/
